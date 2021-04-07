@@ -1,0 +1,11 @@
+{{#each ideas}}
+
+    <div class="card">
+        <div class="card-body">
+            <h3 class="card-title">{{title}}</h3>
+            <div class="card-text">{{{trncatedContent description 20}}}</div>
+            <a href="/ideas/{{id}}" class="btn btn-primary">Read more</a>
+        </div>
+    </div>
+
+{{/each}}

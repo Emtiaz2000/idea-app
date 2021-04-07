@@ -1,0 +1,23 @@
+ <div class="card">
+        <div class="card-body">
+            
+            {{!-- <h3 class="card-title">{{idea.title}}</h3>
+            <p class="card-text">{{idea.description}}</p>
+            <a href="/ideas/{{idea.id}}/edit" class="btn btn-primary">Edit</a>
+             <form action="/ideas/{{idea.id}}?_method=DELETE" method="POST">
+             <button class="btn btn-danger">Delete</button>
+            </form> --}}
+            
+            
+            <h3 class="card-title">{{idea.title}}</h3>
+            <div class="card-text">{{{idea.description}}}</div>
+            {{#if user}}
+            <a href="/ideas/{{idea.id}}/edit" class="btn btn-primary float-left">Edit</a>
+            <form action="/ideas/{{idea.id}}?_method=DELETE" method="POST">
+             <button class="btn btn-danger">Delete</button>
+            </form>
+            {{/if}}
+            
+           
+        </div>
+    </div>
